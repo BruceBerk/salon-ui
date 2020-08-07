@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+      <Navbar bg="dark">
+        <Navbar.Brand href="#home">AR Salon & Day Spa</Navbar.Brand>
+      </Navbar>
+      <div class="text-center">
+        <h2>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        </h2>
+      </div>
     </div>
   );
 }
